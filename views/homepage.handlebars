@@ -1,0 +1,72 @@
+
+<div class="row px-8 pt-4 -mb-8">
+  <div class="col-auto">
+    <h1 class="text-2xl font-extrabold text-white md:text-4xl lg:text-5xl">Welcome to the Ultimate <span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Tech Blog</span>!</h1>
+  </div>
+</div>
+
+
+<div class="flex pt-10">
+    
+{{!-- blog post --}}
+        <div class="w-1/2 ml-8 items-center grid mx-8 mb-8 border rounded-xl shadow-sm border-gray-700 md:mb-12  bg-gray-800">
+            <figure class="flex px-8 ml-8 flex-col items-center justify-center p-8 text-center  border-b rounded-xl md:rounded-xl md:rounded-ss-lg md:border-e bg-gray-800 border-gray-700">
+                <blockquote class="max-w-2xl px-8  mx-auto mb-4  lg:mb-8 text-gray-400">
+                    <h3 class="blogTitle items-center text-uppercase text-lg font-semibold  text-white">Sample Blog Post</h3>
+                    <p class="blogDescTwo my-4 text-left">Thinking about starting a blog, but not sure what to write about? If you have an interest in smart devices, gadgets, science, or any kind of technological implement, you might consider starting a tech blog. The segment is home to some of the most visited and perused websites. Many of these blogs churn out tons of content on a weekly basis, not just to remain relevant but to keep up with the ever-changing nature of the tech space. It follows that running a tech blog might be a bit more challenging than other categories of online publishing. However, it can also be highly rewarding, especially if your blog is well written and contains useful content. How do you go about setting up a great tech blog? While there is plenty of advice on how to approach the idea, it can be useful to first have an idea of what a tech blog looks like. We have pulled together 25 examples of the best tech blogs in existence, so you can see what is involved. What is a tech blog? A tech blog, otherwise called a technical or technology blog, is a website that publishes content around popular technology or highly technical subject matters. Everything from gadgets and smart devices to space exploration and science fiction topics can make up the content load on tech blogs. The content can target trained professionals and enthusiasts in technology fields or broken down for the common tech user to understand. Maybe it's right for you. Good luck, and hopefully this blog site is helpful to you.</p>
+                </blockquote>
+                <figcaption class="flex px-8 items-center justify-center ">
+                    <div class="space-y-0.5 font-medium text-white text-left rtl:text-right ms-3">
+                        <div class="blogCreate">Casey Botticello from Blogging Tips</div>
+                        <div class="date text-sm  text-gray-400 ">03/24/2023</div>
+                    </div>
+                </figcaption>    
+            </figure>
+        </div>
+<div class="w-1/2 items-center">    
+        <div class=" w-1/2 items-center px-8">
+            <a href="./login">
+                <button type="button" class="text-white w-1/2 bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm  py-2.5 text-center me-2 mb-2">Log in</button>
+            </a> 
+
+            <a href="./signup">
+                <button type="button" class="text-white w-1/2 bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm py-2.5 text-center me-2 mb-2">Sign up</button>
+            </a> 
+        </div>
+{{!-- posting comment --}}
+        <form class="new-comment-form px-8">
+        <div class=" mb-4 border rounded-lg bg-gray-700 border-gray-600">
+            <div class="px-4 py-2 rounded-t-lg bg-gray-800">
+                <label for="comment" class="sr-only">Your comment</label>
+                <textarea id="comment" rows="4" class="textAreaCont w-full px-0 text-sm  border-0  focus:ring-0 text-white placeholder-gray-400 bg-gray-800" placeholder="Write a comment..." required></textarea>
+            </div>
+            <div class="flex items-center justify-between px-3 py-2 border-t border-gray-600">
+                <button type="submit" class="inline-flex items-center py-2.5 px-4 text-xs font-medium text-center text-white bg-blue-700 rounded-lg focus:ring-4  focus:ring-blue-900 hover:bg-blue-800">
+                    Post comment
+                </button>
+                <div class="flex ps-0 space-x-1 rtl:space-x-reverse sm:ps-2">
+                    <button type="button" class="inline-flex justify-center items-center p-2  rounded cursor-pointer   text-gray-400 hover:text-white hover:bg-gray-600">
+                    </button>
+                    <button type="button" class="inline-flex justify-center items-center p-2  rounded cursor-pointer  text-gray-400 hover:text-white hover:bg-gray-600">
+                        <span class="sr-only">Set location</span>
+                    </button>
+                    <button type="button" class="inline-flex justify-center items-center p-2  rounded cursor-pointer  text-gray-400 hover:text-white hover:bg-gray-600">
+                    </button>
+                </div>
+            </div>
+        </div>
+        </form>
+
+{{!-- rendering user comments to page --}}
+        <div class="flex items-start px-8 gap-2.5">
+        <div class="flex flex-col gap-1 w-full max-w-[320px]">
+            <div class="commentCont flex items-center space-x-2 rtl:space-x-reverse">
+                <span class="commentOwner text-sm font-semibold text-white">Sample comment</span>
+                <span class="text-sm font-normal text-gray-400">Sample person</span>
+            </div>
+            <div class="flex flex-col leading-1.5 p-4 rounded-lg border-gray-200 bg-gray-700">
+                <p class="commentText text-sm font-normal text-white">Create an account to comment on blog posts!</p>
+            </div>
+        </div>
+        </div>
+</div>
